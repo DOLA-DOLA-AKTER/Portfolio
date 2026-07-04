@@ -1,7 +1,7 @@
 import React from 'react'
 import { FiDownload } from "react-icons/fi";
 import { FaArrowDown } from "react-icons/fa6";
-import portfolio from '../../assets/port.png'
+import portfolio from '../../assets/portfolio.png'
 import { Container } from '../Container';
 import { Button } from '../Button/Button';
 import resume from '../../assets/resume.pdf'
@@ -49,8 +49,7 @@ export const Hero = () => {
                             </div>
                         </div>
 
-
-                        <div className="relative flex justify-center">
+                        <div className="relative flex justify-center rounded-full overflow-hidden w-100 md:w-115 h-100 md:h-115 mx-auto">
                             <img
                                 src={portfolio}
                                 alt="Profile"

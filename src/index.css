@@ -22,4 +22,20 @@
   --color-orange: #ea580c;
 }
 
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fed7aa;
+  transition: all 0.3s;
+  margin-top: 20px;
+}
 
+.slick-dots li.slick-active .dot {
+  background: #f97316;
+  transform: scale(1.2);
+}
+
+.slick-dots li button::before {
+  display: none !important;
+}

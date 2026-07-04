@@ -56,7 +56,7 @@ export const Contacts = () => {
 
       alert("Message Sent Successfully!");
 
-      setFormData({ name: "", email: "", subject: "", message: ""});
+      setFormData({ name: "", email: "", subject: "", message: "" });
       setErrors({});
     }
   };
@@ -72,58 +72,68 @@ export const Contacts = () => {
             peragraph="Feel free to contact me if you have any questions or project opportunities."
           />
         </div>
-        <div className="pt-16 grid grid-cols-1 lg:grid-cols-2 gap-10">
-          <div className="space-y-6">
+        <div className="pt-16 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+          <div className="space-y-8">
 
-            <div className="bg-orange-50 p-6 rounded-2xl flex items-center gap-5 border border-orange-100 hover:shadow-lg duration-300">
-              <div className="bg-orange text-white p-4 rounded-xl">
+            {/* Email */}
+            <div className="flex flex-col md:flex-row items-center text-center md:text-start gap-4 bg-orange-50 p-4 md:p-5 rounded-2xl border border-orange-100 hover:shadow-lg duration-300">
+
+              <div className="bg-orange text-white p-4 rounded-xl w-fit">
                 <HiOutlineMail size={26} />
               </div>
 
               <div>
-                <h3 className="text-xl font-semibold text-slate-900">
+                <h3 className="text-lg sm:text-xl font-semibold text-slate-900">
                   Email
                 </h3>
 
-                <p className="text-slate-600">
+                <p className="text-sm sm:text-base text-slate-600 break-all">
                   dola.akter20320@gmail.com
                 </p>
               </div>
+
             </div>
 
-            <div className="bg-orange-50 p-6 rounded-2xl flex items-center gap-5 border border-orange-100 hover:shadow-lg duration-300">
-              <div className="bg-orange text-white p-4 rounded-xl">
+            {/* Phone */}
+            <div className="flex flex-col md:flex-row items-center text-center md:text-start gap-4 bg-orange-50 p-4 md:p-5 rounded-2xl border border-orange-100 hover:shadow-lg duration-300">
+
+              <div className="bg-orange text-white p-4 rounded-xl w-fit">
                 <HiOutlinePhone size={26} />
               </div>
 
               <div>
-                <h3 className="text-xl font-semibold text-slate-900">
+                <h3 className="text-lg sm:text-xl font-semibold text-slate-900">
                   Phone
                 </h3>
 
-                <p className="text-slate-600">
+                <p className="text-sm sm:text-base text-slate-600">
                   +8801712977115
                 </p>
               </div>
+
             </div>
 
-            <div className="bg-orange-50 p-6 rounded-2xl flex items-center gap-5 border border-orange-100 hover:shadow-lg duration-300">
-              <div className="bg-orange text-white p-4 rounded-xl">
+            {/* Location */}
+            <div className="flex flex-col md:flex-row items-center text-center md:text-start gap-4 bg-orange-50 p-4 md:p-5 rounded-2xl border border-orange-100 hover:shadow-lg duration-300">
+
+              <div className="bg-orange text-white p-4 rounded-xl w-fit">
                 <HiOutlineLocationMarker size={26} />
               </div>
 
               <div>
-                <h3 className="text-xl font-semibold text-slate-900">
+                <h3 className="text-lg sm:text-xl font-semibold text-slate-900">
                   Location
                 </h3>
 
-                <p className="text-slate-600">
+                <p className="text-sm sm:text-base text-slate-600">
                   Dhaka, Bangladesh
                 </p>
               </div>
+
             </div>
 
           </div>
+
           <div className="bg-white rounded-2xl shadow-lg border border-gray-200 p-8">
 
             <form onSubmit={handleSubmit} className="space-y-5">

@@ -76,7 +76,6 @@ export const Navber = () => {
             </ul>
 
             {/* Resume Button */}
-
             <div>
               <div onClick={handleOpen} className="hidden lg:block">
                 <Button>Resume</Button>
@@ -93,8 +92,8 @@ export const Navber = () => {
                     width="100%"
                     height="100%"
                   />
-                  <div onClick={handleClose} className="absolute top-3.5 right-42 hover:bg-white/10 p-1 rounded-full duration-300" > 
-                  <HiX className="text-xl text-white cursor-pointer" />
+                  <div onClick={handleClose} className="absolute top-3.5 right-40 hover:bg-white/10 p-1 rounded-full duration-300" >
+                    <HiX className="text-xl text-white cursor-pointer" />
                   </div>
                 </Box>
               </Modal>
@@ -111,42 +110,41 @@ export const Navber = () => {
 
           {/* Mobile Menu */}
           {isOpen && (
-            <div className="lg:hidden py-5 border-t">
+            <div className="lg:hidden py-5 border-t backdrop:blur-6xl">
               <ul className="flex flex-col gap-5 text-base text-center text-gray-900">
                 <li>
-                  <a className="relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-orange after:duration-300 hover:after:w-full">
+                  <NavLink to="/" className="relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-orange after:duration-300 hover:after:w-full">
                     Home
-                  </a>
+                  </NavLink>
                 </li>
 
                 <li>
-                  <a className="relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-orange after:duration-300 hover:after:w-full">
+                  <NavLink to="/about" className="relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-orange after:duration-300 hover:after:w-full">
                     About Me
-                  </a>
+                  </NavLink>
                 </li>
 
                 <li>
-                  <a className="relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-orange after:duration-300 hover:after:w-full">
+                  <NavLink to="/skills" className="relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-orange after:duration-300 hover:after:w-full">
                     Skills
-                  </a>
+                  </NavLink>
                 </li>
 
                 <li>
-                  <a className="relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-orange after:duration-300 hover:after:w-full">
+                  <NavLink to="/projects" className="relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-orange after:duration-300 hover:after:w-full">
                     Projects
-                  </a>
+                  </NavLink>
                 </li>
 
                 <li>
-                  <a className="relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-orange after:duration-300 hover:after:w-full">
+                  <NavLink to="/contact" className="relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-orange after:duration-300 hover:after:w-full">
                     Contact
-                  </a>
+                  </NavLink>
                 </li>
                 <li>
-                  <Button href={resume}>
-                    Resume{" "}
-                    <HiDownload className="text-lg sm:text-xl lg:text-2xl" />
-                  </Button>
+                  <div onClick={handleOpen}>
+                    <Button>Resume</Button>
+                  </div>
                 </li>
               </ul>
             </div>
