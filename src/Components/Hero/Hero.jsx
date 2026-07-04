@@ -1,24 +1,21 @@
 import React from 'react'
 import { FiDownload } from "react-icons/fi";
 import { FaArrowDown } from "react-icons/fa6";
-import portfolio from '../../assets/portfolio.png'
+import portfolio from '../../assets/port.png'
 import { Container } from '../Container';
 import { Button } from '../Button/Button';
 import resume from '../../assets/resume.pdf'
+import { NavLink } from 'react-router-dom';
 
 
 export const Hero = () => {
     return (
-        <section className="lg:mt-0 mt-20 min-h-screen bg- text-white">
+        <section className="lg:mt-0 mt-20  text-white">
             <Container>
                 <div className="flex flex-col justify-center">
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
 
                         <div>
-                            <p className="text-orange text-2xl mb-3">
-                                
-                            </p>
-
                             <h1 className="text-5xl md:text-6xl font-bold leading-tight text-gray-800">
                                 Hi, I'm
                                 {" "}
@@ -38,7 +35,7 @@ export const Hero = () => {
                             </p>
 
                             <div className="flex flex-wrap gap-5 mt-8">
-                                <Button>Hire Me</Button>
+                                <Button> <a href='#contact'>Hire Me</a> </Button>
 
                                 <Button className="bg-transparent! border-2 border-orange hover:bg-orange! duration-300 text-orange! hover:text-white!">
                                     <a
@@ -54,12 +51,10 @@ export const Hero = () => {
 
 
                         <div className="relative flex justify-center">
-                            <div className="absolute md:w-80 w-70 h-70 md:h-80 bg-orange-600/20 rounded-full blur-3xl"></div>
-
                             <img
                                 src={portfolio}
                                 alt="Profile"
-                                className="relative w-80 md:w-105 rounded-full object-cover overflow-hidden"
+                                className="relative w-80 md:w-105 rounded-4xl object-cover overflow-hidden"
                             />
                         </div>
 

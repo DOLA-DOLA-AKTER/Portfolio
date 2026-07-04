@@ -78,7 +78,7 @@ export const Project = () => {
   ]
 
   return (
-    <section>
+    <section className="bg-orange-50">
       <Container>
         {/* Section Heading */}
         <div>

@@ -5,8 +5,8 @@ import { SectionHeading } from '../SectionHeading';
 
 export const Abouts = () => {
     return (
-        <section>
-            <Container className=' bg-orange-50 rounded-2xl md:px-10!'>
+        <section id='about' className="bg-orange-50 ">
+            <Container className=' rounded-2xl md:px-10!'>
                 <div>
 
                     {/* Section Heading */}

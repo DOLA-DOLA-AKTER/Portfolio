@@ -6,6 +6,8 @@ import resume from "../../assets/resume.pdf";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
+import { NavLink } from "react-router-dom";
+
 
 const style = {
   position: "absolute",
@@ -43,33 +45,33 @@ export const Navber = () => {
             {/* Desktop Menu */}
             <ul className="hidden lg:flex items-center justify-center gap-8 text-lg font-medium text-gray-900">
               <li>
-                <a className="relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-orange after:duration-300 hover:after:w-full">
+                <NavLink to="/" className="relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-orange after:duration-300 hover:after:w-full">
                   Home
-                </a>
+                </NavLink>
               </li>
 
               <li>
-                <a className="relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-orange after:duration-300 hover:after:w-full">
+                <NavLink to="/about" className="relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-orange after:duration-300 hover:after:w-full">
                   About Me
-                </a>
+                </NavLink>
               </li>
 
               <li>
-                <a className="relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-orange after:duration-300 hover:after:w-full">
+                <NavLink to="/skills" className="relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-orange after:duration-300 hover:after:w-full">
                   Skills
-                </a>
+                </NavLink>
               </li>
 
               <li>
-                <a className="relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-orange after:duration-300 hover:after:w-full">
+                <NavLink to="/projects" className="relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-orange after:duration-300 hover:after:w-full">
                   Projects
-                </a>
+                </NavLink>
               </li>
 
               <li>
-                <a className="relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-orange after:duration-300 hover:after:w-full">
+                <NavLink to="/contact" className="relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-orange after:duration-300 hover:after:w-full">
                   Contact
-                </a>
+                </NavLink>
               </li>
             </ul>
 
