@@ -1,7 +1,37 @@
 import React from 'react'
-import { HiOutlineUser, HiOutlineMail, HiOutlineLocationMarker, HiOutlineAcademicCap } from "react-icons/hi";
+import { FaRegUser } from "react-icons/fa6";
+import { MdMailOutline } from "react-icons/md";
+import { GrLocation } from "react-icons/gr";
+import { HiOutlineAcademicCap } from "react-icons/hi";
 import { Container } from '../Container';
 import { SectionHeading } from '../SectionHeading';
+
+const personalInfo = [
+    {
+        id: 1,
+        icon: <FaRegUser className=" md:text-2xl text-lg" />,
+        title: "Name",
+        value: "Dola Akter",
+    },
+    {
+        id: 2,
+        icon: <MdMailOutline className=" md:text-2xl text-lg" />,
+        title: "Email",
+        value: "dola.akter20320@gmail.com",
+    },
+    {
+        id: 3,
+        icon: <GrLocation className=" md:text-2xl text-lg" />,
+        title: "Location",
+        value: "Dhaka, Bangladesh",
+    },
+    {
+        id: 4,
+        icon: <HiOutlineAcademicCap className=" md:text-2xl" />,
+        title: "Experience",
+        value: "Entry-Level Front-End Developer",
+    },
+];
 
 export const Abouts = () => {
     return (
@@ -26,14 +56,12 @@ export const Abouts = () => {
                             </h3>
 
                             <p className="text-gray-600 leading-8 mb-6">
-                                Motivated and passionate Front-End Web Developer with strong
-                                skills in HTML, CSS, JavaScript, React.js, Tailwind CSS,
-                                Bootstrap and Firebase.
+                                I am a passionate Front-End Web Developer who enjoys building responsive, accessible, and user-friendly web applications using React.js, JavaScript, and Tailwind CSS.
+
                             </p>
 
                             <p className="text-gray-600 leading-8">
-                                I enjoy building responsive, user-friendly websites and
-                                continuously learning modern technologies to improve my skills.
+                                Currently, I am expanding my skills by learning modern web technologies and best practices. I enjoy solving problems, writing clean code, and creating interactive user experiences.
                             </p>
 
                         </div>
@@ -46,62 +74,25 @@ export const Abouts = () => {
 
                             <div className="space-y-6">
 
-                                <div className="flex items-center gap-4">
-                                    <div className="bg-orange-500 text-white p-3 rounded-xl">
-                                        <HiOutlineUser className=" md:text-2xl text-lg" />
-                                    </div>
+                                {
+                                    personalInfo.map((item) => (
+                                        <div key={item.id} className="flex items-center gap-4">
+                                            <div className="bg-orange-500 text-white p-3 rounded-xl">
+                                                {item.icon}
+                                            </div>
 
-                                    <div>
-                                        <p className="text-gray-400 text-sm">Name</p>
-                                        <h4 className="md:text-lg text-base font-medium">
-                                            Dola Akter
-                                        </h4>
-                                    </div>
-                                </div>
-
-                                <div className="flex items-center gap-4">
-                                    <div className="bg-orange-500 text-white p-3 rounded-xl">
-                                        <HiOutlineMail className=" md:text-2xl text-lg" />
-                                    </div>
-
-                                    <div>
-                                        <p className="text-gray-400 text-sm">Email</p>
-                                        <h4 className="md:text-lg text-base font-medium break-all">
-                                            dola.akter20320@gmail.com
-                                        </h4>
-                                    </div>
-                                </div>
-
-                                <div className="flex items-center gap-4">
-                                    <div className="bg-orange-500 text-white p-3 rounded-xl">
-                                        <HiOutlineLocationMarker  className=" md:text-2xl text-lg" />
-                                    </div>
-
-                                    <div>
-                                        <p className="text-gray-400 text-sm">Location</p>
-                                        <h4 className="md:text-lg text-base font-medium">
-                                            Dhaka, Bangladesh
-                                        </h4>
-                                    </div>
-                                </div>
-
-                                <div className="flex items-center gap-4">
-                                    <div className="bg-orange-500 text-white p-3 rounded-xl">
-                                        <HiOutlineAcademicCap  className=" md:text-2xl text-lg" />
-                                    </div>
-
-                                    <div>
-                                        <p className="text-gray-400 text-sm">Experience</p>
-                                        <h4 className="md:text-lg text-base font-medium">
-                                            Fresher
-                                        </h4>
-                                    </div>
-                                </div>
+                                            <div>
+                                                <p className="text-gray-400 text-sm"> {item.title} </p>
+                                                <h4 className="md:text-lg text-base font-medium break-all">
+                                                    {item.value}
+                                                </h4>
+                                            </div>
+                                        </div>
+                                    ))
+                                }
 
                             </div>
-
                         </div>
-
                     </div>
                 </div>
             </Container>

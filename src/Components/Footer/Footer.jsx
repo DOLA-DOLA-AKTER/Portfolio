@@ -1,17 +1,29 @@
-import React, { useState, useEffect }  from 'react'
-import { FaFacebookF, FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import React, { useEffect, useState } from 'react'
 import { Container } from '../Container';
 import { NavLink } from 'react-router-dom';
+import { FaGithub } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
+
 
 export const Footer = () => {
+    const year = new Date().getFullYear();
 
-    const [dateTime, setDateTime] = useState(new Date().toLocaleString());
+    const formatDateTime = () =>
+        new Date().toLocaleString("en-US", {
+            weekday: "short",
+            day: "numeric",
+            month: "short",
+            year: "numeric",
+            hour: "2-digit",
+            minute: "2-digit",
+            second: "2-digit",
+        });
 
+    const [dateTime, setDateTime] = useState(formatDateTime());
     const updateDateTime = () => {
-        const updateDate = new Date();
-        const dateTime = updateDate.toLocaleString();
-        setDateTime(dateTime);
-    };    
+        setDateTime(formatDateTime());
+    };
     useEffect(() => {
         const interval = setInterval(updateDateTime, 1000);
         return () => clearInterval(interval);
@@ -33,6 +45,15 @@ export const Footer = () => {
                             JavaScript, Tailwind CSS, and Bootstrap. I love creating modern,
                             responsive, and user-friendly websites.
                         </p>
+
+                        <div className='flex items-center gap-5 pt-5'>
+
+                            <a href="https://github.com/DOLA-DOLA-AKTER" target="_blank" rel="noopener noreferrer"><FaGithub className='text-white text-2xl hover:text-orange duration-300' /></a>
+                            <a href="https://www.linkedin.com/in/dola-akter-37906941a/" target="_blank" rel="noopener noreferrer"><FaLinkedin className='text-white text-2xl hover:text-orange duration-300' /></a>
+                            <a href="mailto:dola.akter20320@gmail.com"
+                            ><HiOutlineMail className='text-white text-2xl hover:text-orange duration-300' /></a>
+
+                        </div>
                     </div>
 
                     {/* Quick Links */}
@@ -76,26 +97,23 @@ export const Footer = () => {
                             Services
                         </h6>
 
-                        <a
-                            href="#home"
+                        <p
                             className="md:mb-4 mb-3 block text-gray-400 text-sm md:text-base duration-300 hover:pl-1 hover:text-orange"
                         >
                             Web Design
-                        </a>
+                        </p>
 
-                        <a
-                            href="#about"
+                        <p
                             className="md:mb-4 mb-3 block text-gray-400 text-sm md:text-base duration-300 hover:pl-1 hover:text-orange"
                         >
                             Web Development
-                        </a>
+                        </p>
 
-                        <a
-                            href="#projects"
+                        <p
                             className="md:mb-4 mb-3 block text-gray-400 text-sm md:text-base duration-300 hover:pl-1 hover:text-orange"
                         >
                             Mobile Responsive Design
-                        </a>
+                        </p>
                     </div>
 
                     <div className='hidden lg:block'></div>
@@ -104,7 +122,7 @@ export const Footer = () => {
             </Container>
             <div className="py-6 border-t border-gray-700 text-center">
                 <p className="text-sm md:text-base text-gray-500">
-                    © 2026 Dola Akter. All Rights Reserved.
+                    © {year} Dola Akter. All Rights Reserved.
                 </p>
 
                 <p className="pt-2 text-xs md:text-sm text-gray-400">

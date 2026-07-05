@@ -2,7 +2,7 @@ import { FaLaptop, FaMobileAlt, FaPaintBrush } from "react-icons/fa";
 import { Container } from "../Container";
 import { SectionHeading } from "../SectionHeading";
 
-const Services = () => {
+export const Services = () => {
     const services = [
         {
             id: 1,
@@ -64,4 +64,3 @@ const Services = () => {
     );
 };
 
-export default Services;

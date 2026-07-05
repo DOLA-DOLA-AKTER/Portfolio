@@ -7,6 +7,7 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import { NavLink } from "react-router-dom";
+import { useLocation } from 'react-router-dom';
 
 
 const style = {
@@ -26,6 +27,8 @@ export const Navber = () => {
   const handleClose = () => setOpen(false);
 
   const [isOpen, setIsOpen] = useState(false);
+  let location = useLocation()
+  const pathname = location.pathname 
 
   return (
     <header className="w-full shadow-md fixed top-0 left-0 z-50 backdrop-blur-[10px] transition-all duration-300">
@@ -35,8 +38,8 @@ export const Navber = () => {
             {/* Logo */}
             <div>
               <NavLink
-                to="/"
-                className="md:text-4xl text-3xl font-bold text-black "
+                to='/'
+                className="text-4xl font-bold text-black "
               >
                 <span className="bg-linear-to-r from-orange-800 via-orange-600 to-black bg-clip-text text-transparent">D</span>ola <span className="text-orange">Akter</span>
               </NavLink>
@@ -45,31 +48,31 @@ export const Navber = () => {
             {/* Desktop Menu */}
             <ul className="hidden lg:flex items-center justify-center gap-8 text-lg font-medium text-gray-900">
               <li>
-                <NavLink to="/" className="relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-orange after:duration-300 hover:after:w-full">
+                <NavLink to="/" className={`relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-orange after:duration-300 hover:after:w-full ${pathname === "/" ? "text-orange after:w-full" : "text-gray-900"}`}>
                   Home
                 </NavLink>
               </li>
 
               <li>
-                <NavLink to="/about" className="relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-orange after:duration-300 hover:after:w-full">
+                <NavLink to="/about" className={`relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-orange after:duration-300 hover:after:w-full ${pathname === "/about" ? "text-orange after:w-full" : "text-gray-900"}`}>
                   About Me
                 </NavLink>
               </li>
 
               <li>
-                <NavLink to="/skills" className="relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-orange after:duration-300 hover:after:w-full">
+                <NavLink to="/skills" className={`relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-orange after:duration-300 hover:after:w-full ${pathname === "/skills" ? "text-orange after:w-full" : "text-gray-900"}`}>
                   Skills
                 </NavLink>
               </li>
 
               <li>
-                <NavLink to="/projects" className="relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-orange after:duration-300 hover:after:w-full">
+                <NavLink to="/projects" className={`relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-orange after:duration-300 hover:after:w-full ${pathname === "/projects" ? "text-orange after:w-full" : "text-gray-900"}`}>
                   Projects
                 </NavLink>
               </li>
 
               <li>
-                <NavLink to="/contact" className="relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-orange after:duration-300 hover:after:w-full">
+                <NavLink to="/contact" className={`relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-orange after:duration-300 hover:after:w-full ${pathname === "/contact" ? "text-orange after:w-full" : "text-gray-900"}`}>
                   Contact
                 </NavLink>
               </li>
@@ -113,31 +116,31 @@ export const Navber = () => {
             <div className="lg:hidden py-5 border-t backdrop:blur-6xl">
               <ul className="flex flex-col gap-5 text-base text-center text-gray-900">
                 <li>
-                  <NavLink to="/" className="relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-orange after:duration-300 hover:after:w-full">
+                  <NavLink to="/" className={`relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-orange after:duration-300 hover:after:w-full ${pathname === "/" ? "text-orange after:w-full" : "text-gray-900"}`}>
                     Home
                   </NavLink>
                 </li>
 
                 <li>
-                  <NavLink to="/about" className="relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-orange after:duration-300 hover:after:w-full">
+                  <NavLink to="/about" className={`relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-orange after:duration-300 hover:after:w-full ${pathname === "/about" ? "text-orange after:w-full" : "text-gray-900"}`}>
                     About Me
                   </NavLink>
                 </li>
 
                 <li>
-                  <NavLink to="/skills" className="relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-orange after:duration-300 hover:after:w-full">
+                  <NavLink to="/skills" className={`relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-orange after:duration-300 hover:after:w-full ${pathname === "/skills" ? "text-orange after:w-full" : "text-gray-900"}`}>
                     Skills
                   </NavLink>
                 </li>
 
                 <li>
-                  <NavLink to="/projects" className="relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-orange after:duration-300 hover:after:w-full">
+                  <NavLink to="/projects" className={`relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-orange after:duration-300 hover:after:w-full ${pathname === "/projects" ? "text-orange after:w-full" : "text-gray-900"}`}>
                     Projects
                   </NavLink>
                 </li>
 
                 <li>
-                  <NavLink to="/contact" className="relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-orange after:duration-300 hover:after:w-full">
+                  <NavLink to="/contact" className={`relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-orange after:duration-300 hover:after:w-full ${pathname === "/contact" ? "text-orange after:w-full" : "text-gray-900"}`}>
                     Contact
                   </NavLink>
                 </li>

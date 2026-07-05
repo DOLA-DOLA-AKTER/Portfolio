@@ -1,7 +1,10 @@
 import React from 'react'
 import { Container } from '../Container';
 import { SectionHeading } from '../SectionHeading';
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaBootstrap, FaGitAlt, FaGithub } from "react-icons/fa";
+import { FaHtml5 } from "react-icons/fa";
+import { FaSquareJs } from "react-icons/fa6";
+import { IoLogoFirebase } from "react-icons/io5";
+import {  FaCss3Alt, FaReact, FaBootstrap, FaGitAlt, FaGithub } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiFirebase } from "react-icons/si";
 
@@ -18,7 +21,7 @@ const skills = [
     },
     {
         name: "JavaScript",
-        icon: <FaJs className="text-5xl text-yellow-400" />,
+        icon: <FaSquareJs className="text-5xl text-yellow-400" />,
         level: "85%",
     },
     {

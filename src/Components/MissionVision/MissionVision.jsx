@@ -1,7 +1,9 @@
-import { FaRocket, FaEye } from "react-icons/fa";
+import React from 'react'
+import { FaRocket } from "react-icons/fa";
+import { FaEye } from "react-icons/fa";
 import { Container } from "../Container";
 
-const MissionVision = () => {
+export const MissionVision = () => {
     return (
         <section>
             <Container>
@@ -22,7 +24,7 @@ const MissionVision = () => {
 
                     {/* Vision Card */}
                     <div className="bg-white border border-orange-100 rounded-xl p-8 shadow-md hover:border-orange-500 hover:-translate-y-2 hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-center text-center">
-                        <FaEye className="text-4xl text-orange-500 mb-5 " />
+                        <FaEye className="text-5xl text-orange-500 mb-5 " />
 
                         <h3 className="md:text-3xl text-2xl font-bold text-gray-900 mb-3">
                             Vision
@@ -39,4 +41,3 @@ const MissionVision = () => {
     );
 };
 
-export default MissionVision;
