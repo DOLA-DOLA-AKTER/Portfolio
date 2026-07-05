@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import { Container } from "../Container";
 import { SectionHeading } from "../SectionHeading";
 import "slick-carousel/slick/slick.css";
@@ -8,14 +8,6 @@ import Slider from "react-slick";
 
 export const Education = () => {
 
-    let sliderRef = useRef(null);
-    const play = () => {
-        sliderRef.slickPlay();
-    };
-    const pause = () => {
-        sliderRef.slickPause();
-    };
-
     const settings = {
         dots: true,
         infinite: true,
@@ -23,6 +15,7 @@ export const Education = () => {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 4000,
+        pauseOnHover: true,
         customPaging: i => (
             <div className="dot">
             </div>
@@ -74,17 +67,84 @@ export const Education = () => {
 
     return (
         <section>
-            <Container>
+            <Container className="">
                 {/* Section Heading */}
                 <div>
                     <SectionHeading
                         heading1="Education"
+                        sectionHeading="pb-0!"
                     />
                 </div>
 
+
+                <div className="py-10 overflow-hidden" >
+                    <Slider {...settings}>
+                            <div className="px-3">
+                                <div className="bg-linear-to-r from-orange to-orange-400 rounded-2xl p-8 text-white shadow-lg transition-all duration-300">
+                                    <p className="text-sm font-medium">
+                                        Shahid Smrity High School
+                                    </p>
+
+                                    <h3 className="text-xl font-semibold pt-3 pb-10">
+                                        Secondary School Certificate (SSC)
+                                    </h3>
+
+                                    <p className="text-sm">
+                                        January 2017 - February 2019
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="px-3">
+                                <div className="bg-linear-to-r from-orange to-orange-400 rounded-2xl p-8 text-white shadow-lg transition-all duration-300">
+                                    <p className="text-sm font-medium">
+                                        Shahid Smrity High School
+                                    </p>
+
+                                    <h3 className="text-xl font-semibold pt-3 pb-10">
+                                        Secondary School Certificate (SSC)
+                                    </h3>
+
+                                    <p className="text-sm">
+                                        January 2017 - February 2019
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="px-3">
+                                <div className="bg-linear-to-r from-orange to-orange-400 rounded-2xl p-8 text-white shadow-lg transition-all duration-300">
+                                    <p className="text-sm font-medium">
+                                        Shahid Smrity High School
+                                    </p>
+
+                                    <h3 className="text-xl font-semibold pt-3 pb-10">
+                                        Secondary School Certificate (SSC)
+                                    </h3>
+
+                                    <p className="text-sm">
+                                        January 2017 - February 2019
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="px-3">
+                                <div className="bg-linear-to-r from-orange to-orange-400 rounded-2xl p-8 text-white shadow-lg transition-all duration-300">
+                                    <p className="text-sm font-medium">
+                                        Shahid Smrity High School
+                                    </p>
+
+                                    <h3 className="text-xl font-semibold pt-3 pb-10">
+                                        Secondary School Certificate (SSC)
+                                    </h3>
+
+                                    <p className="text-sm">
+                                        January 2017 - February 2019
+                                    </p>
+                                </div>
+                            </div>
+                    </Slider>
+                </div>
+
                 {/* Card */}
-                <div>
-                    <Slider ref={slider => (sliderRef = slider)} {...settings}>
+                    {/* <div className=" bg-red-500">
+                        <Slider {...settings}>
                         {educationData.map((item) => (
                             <div key={item.id} className="px-3">
                                 <div className="bg-linear-to-r from-orange to-orange-400 rounded-2xl p-8 text-white shadow-lg transition-all duration-300">
@@ -103,8 +163,7 @@ export const Education = () => {
                             </div>
                         ))}
                     </Slider>
-                </div>
-
+                    </div> */}
             </Container>
         </section>
     );

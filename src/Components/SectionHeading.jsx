@@ -1,8 +1,8 @@
 import React from 'react'
 
-export const SectionHeading = ({ heading1, heading2, className, peragraph }) => {
+export const SectionHeading = ({ heading1, heading2, className, peragraph, sectionHeading }) => {
     return (
-        <div className="text-center pb-15">
+        <div className={`text-center md:pb-15 pb-10 ${sectionHeading}`}>
             <h2 className={`text-4xl md:text-5xl font-bold ${className}`}>
                 {heading1} <span className="text-orange"> {heading2} </span>
             </h2>

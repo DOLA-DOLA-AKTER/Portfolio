@@ -101,18 +101,20 @@ export const Project = () => {
                 />
               </div>
               <div className="p-6 flex flex-col items-start">
-                <h3 className="text-xl font-semibold text-gray-900">
+                <h3 className="md:text-xl text-lg font-semibold text-gray-900">
                   {project.title}
                 </h3>
-                <p className="text-gray-600 py-3 ">
+                <p className="text-gray-600 py-3 text-sm md:text-base">
                   {project.description}
                 </p>
-                <div className='flex items-center gap-5 pb-4 text-orange text-xs md:text-sm font-medium'>
+
+                <div className='flex flex-wrap items-center md:gap-5 gap-3 pb-4 text-orange text-xs md:text-sm font-medium'>
                   {project.technologies.map((tech) => (
                     <span key={tech} className='bg-orange-50 rounded-md px-4 py-1.5 '> {tech} </span>
                   ))}
                 </div>
-                <div className='flex items-center gap-5'>
+
+                <div className='flex flex-col md:flex-row items-center gap-5'>
                   <Button className='shadow-none!'> <a href={project.liveLink} className=' flex text-center gap-2'>Live Demo <FiExternalLink className='text-2xl' /></a></Button>
                   <Button className='text-black! bg-transparent! border-2 border-gray-300 shadow-none!'> <a href={project.githubLink} className='flex text-center gap-2'>GitHub <FaGithub className='text-2xl' /></a> </Button>
                 </div>

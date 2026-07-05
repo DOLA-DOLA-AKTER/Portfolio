@@ -1,6 +1,7 @@
 import React, { useState, useEffect }  from 'react'
 import { FaFacebookF, FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import { Container } from '../Container';
+import { NavLink } from 'react-router-dom';
 
 export const Footer = () => {
 
@@ -40,33 +41,33 @@ export const Footer = () => {
                             Quick Links
                         </h6>
 
-                        <a
-                            href="#home"
+                        <NavLink
+                            to="/"
                             className="md:mb-4 mb-3 block text-gray-400 text-sm md:text-base duration-300 hover:pl-1 hover:text-orange"
                         >
                             Home
-                        </a>
+                        </NavLink>
 
-                        <a
-                            href="#about"
+                        <NavLink
+                            to="/about"
                             className="md:mb-4 mb-3 block text-gray-400 text-sm md:text-base duration-300 hover:pl-1 hover:text-orange"
                         >
                             About
-                        </a>
+                        </NavLink>
 
-                        <a
-                            href="#projects"
+                        <NavLink
+                            to="/projects"
                             className="md:mb-4 mb-3 block text-gray-400 text-sm md:text-base duration-300 hover:pl-1 hover:text-orange"
                         >
                             Projects
-                        </a>
+                        </NavLink>
 
-                        <a
-                            href="#contact"
+                        <NavLink
+                            to="/contact"
                             className="md:mb-4 mb-3 block text-gray-400 text-sm md:text-base duration-300 hover:pl-1 hover:text-orange"
                         >
                             Contact
-                        </a>
+                        </NavLink>
                     </div>
 
                     {/* Services */}

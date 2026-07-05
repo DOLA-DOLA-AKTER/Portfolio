@@ -48,12 +48,12 @@ export const Abouts = () => {
 
                                 <div className="flex items-center gap-4">
                                     <div className="bg-orange-500 text-white p-3 rounded-xl">
-                                        <HiOutlineUser size={24} />
+                                        <HiOutlineUser className=" md:text-2xl text-lg" />
                                     </div>
 
                                     <div>
                                         <p className="text-gray-400 text-sm">Name</p>
-                                        <h4 className="text-lg font-medium">
+                                        <h4 className="md:text-lg text-base font-medium">
                                             Dola Akter
                                         </h4>
                                     </div>
@@ -61,25 +61,25 @@ export const Abouts = () => {
 
                                 <div className="flex items-center gap-4">
                                     <div className="bg-orange-500 text-white p-3 rounded-xl">
-                                        <HiOutlineMail size={24} />
+                                        <HiOutlineMail className=" md:text-2xl text-lg" />
                                     </div>
 
                                     <div>
                                         <p className="text-gray-400 text-sm">Email</p>
-                                        <h4 className="text-lg font-medium">
-                                            {/* dola.akter20320@gmail.com */}
+                                        <h4 className="md:text-lg text-base font-medium break-all">
+                                            dola.akter20320@gmail.com
                                         </h4>
                                     </div>
                                 </div>
 
                                 <div className="flex items-center gap-4">
                                     <div className="bg-orange-500 text-white p-3 rounded-xl">
-                                        <HiOutlineLocationMarker size={24} />
+                                        <HiOutlineLocationMarker  className=" md:text-2xl text-lg" />
                                     </div>
 
                                     <div>
                                         <p className="text-gray-400 text-sm">Location</p>
-                                        <h4 className="text-lg font-medium">
+                                        <h4 className="md:text-lg text-base font-medium">
                                             Dhaka, Bangladesh
                                         </h4>
                                     </div>
@@ -87,12 +87,12 @@ export const Abouts = () => {
 
                                 <div className="flex items-center gap-4">
                                     <div className="bg-orange-500 text-white p-3 rounded-xl">
-                                        <HiOutlineAcademicCap size={24} />
+                                        <HiOutlineAcademicCap  className=" md:text-2xl text-lg" />
                                     </div>
 
                                     <div>
                                         <p className="text-gray-400 text-sm">Experience</p>
-                                        <h4 className="text-lg font-medium">
+                                        <h4 className="md:text-lg text-base font-medium">
                                             Fresher
                                         </h4>
                                     </div>

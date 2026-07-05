@@ -72,7 +72,7 @@ export const Contacts = () => {
             peragraph="Feel free to contact me if you have any questions or project opportunities."
           />
         </div>
-        <div className="pt-16 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           <div className="space-y-8">
 
             {/* Email */}

@@ -49,7 +49,7 @@ export const Hero = () => {
                             </div>
                         </div>
 
-                        <div className="relative flex justify-center rounded-full overflow-hidden w-100 md:w-115 h-100 md:h-115 mx-auto">
+                        <div className="relative flex justify-center rounded-full overflow-hidden w-71 md:w-115 h-71 md:h-115 mx-auto">
                             <img
                                 src={portfolio}
                                 alt="Profile"

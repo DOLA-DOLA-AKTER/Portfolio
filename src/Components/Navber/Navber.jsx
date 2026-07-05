@@ -34,12 +34,12 @@ export const Navber = () => {
           <div className="flex items-center justify-between py-5">
             {/* Logo */}
             <div>
-              <a
-                href="#"
-                className="text-4xl font-bold text-black "
+              <NavLink
+                to="/"
+                className="md:text-4xl text-3xl font-bold text-black "
               >
                 <span className="bg-linear-to-r from-orange-800 via-orange-600 to-black bg-clip-text text-transparent">D</span>ola <span className="text-orange">Akter</span>
-              </a>
+              </NavLink>
             </div>
 
             {/* Desktop Menu */}
