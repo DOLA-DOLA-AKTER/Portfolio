@@ -115,8 +115,29 @@ export const Project = () => {
                 </div>
 
                 <div className='flex flex-col md:flex-row items-center gap-5'>
-                  <Button className='shadow-none!'> <a href={project.liveLink} className=' flex text-center gap-2'>Live Demo <FiExternalLink className='text-2xl' /></a></Button>
-                  <Button className='text-black! bg-transparent! border-2 border-gray-300 shadow-none!'> <a href={project.githubLink} className='flex text-center gap-2'>GitHub <FaGithub className='text-2xl' /></a> </Button>
+                  <Button className="shadow-none!">
+                    <a
+                      href={project.liveLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2"
+                    >
+                      Live Demo
+                      <FiExternalLink className="text-2xl" />
+                    </a>
+                  </Button>
+
+                  <Button className="text-black! bg-transparent! border-2 border-gray-300 shadow-none!">
+                    <a
+                      href={project.githubLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2"
+                    >
+                      GitHub
+                      <FaGithub className="text-2xl" />
+                    </a>
+                  </Button>
                 </div>
               </div>
             </div>
