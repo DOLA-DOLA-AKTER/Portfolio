@@ -9,13 +9,13 @@ import resume from '../../assets/resume.pdf'
 
 export const Hero = () => {
     return (
-        <section className="lg:mt-0 mt-20  text-white">
+        <section className="lg:mt-0 mt-10  text-white">
             <Container>
                 <div className="flex flex-col justify-center">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
                         <div>
-                            <h1 className="text-5xl md:text-6xl font-bold leading-tight text-gray-800">
+                            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-gray-800">
                                 Hi, I'm
                                 {" "}
                                 <span className="text-orange">
@@ -27,7 +27,7 @@ export const Hero = () => {
                                 Front-End Web Developer
                             </h2>
 
-                            <p className="text-gray-600 mt-6 leading-8 max-w-xl">
+                            <p className="text-gray-600 mt-6 leading-8 max-w-xl text-sm md:text-base">
                                 I build modern, responsive and user-friendly websites using
                                 React.js, Tailwind CSS and JavaScript. Passionate about creating
                                 clean UI and smooth user experiences.

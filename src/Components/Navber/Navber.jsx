@@ -116,31 +116,31 @@ export const Navber = () => {
             <div className="lg:hidden py-5 border-t backdrop:blur-6xl">
               <ul className="flex flex-col gap-5 text-base text-center text-gray-900">
                 <li>
-                  <NavLink to="/" className={`relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-orange after:duration-300 hover:after:w-full ${pathname === "/" ? "text-orange after:w-full" : "text-gray-900"}`}>
+                  <NavLink to="/" onClick={() => setIsOpen(false)} className={`relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-orange after:duration-300 hover:after:w-full ${pathname === "/" ? "text-orange after:w-full" : "text-gray-900"}`}>
                     Home
                   </NavLink>
                 </li>
 
                 <li>
-                  <NavLink to="/about" className={`relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-orange after:duration-300 hover:after:w-full ${pathname === "/about" ? "text-orange after:w-full" : "text-gray-900"}`}>
+                  <NavLink to="/about" onClick={() => setIsOpen(false)} className={`relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-orange after:duration-300 hover:after:w-full ${pathname === "/about" ? "text-orange after:w-full" : "text-gray-900"}`}>
                     About Me
                   </NavLink>
                 </li>
 
                 <li>
-                  <NavLink to="/skills" className={`relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-orange after:duration-300 hover:after:w-full ${pathname === "/skills" ? "text-orange after:w-full" : "text-gray-900"}`}>
+                  <NavLink to="/skills" onClick={() => setIsOpen(false)} className={`relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-orange after:duration-300 hover:after:w-full ${pathname === "/skills" ? "text-orange after:w-full" : "text-gray-900"}`}>
                     Skills
                   </NavLink>
                 </li>
 
                 <li>
-                  <NavLink to="/projects" className={`relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-orange after:duration-300 hover:after:w-full ${pathname === "/projects" ? "text-orange after:w-full" : "text-gray-900"}`}>
+                  <NavLink to="/projects" onClick={() => setIsOpen(false)} className={`relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-orange after:duration-300 hover:after:w-full ${pathname === "/projects" ? "text-orange after:w-full" : "text-gray-900"}`}>
                     Projects
                   </NavLink>
                 </li>
 
                 <li>
-                  <NavLink to="/contact" className={`relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-orange after:duration-300 hover:after:w-full ${pathname === "/contact" ? "text-orange after:w-full" : "text-gray-900"}`}>
+                  <NavLink to="/contact" onClick={() => setIsOpen(false)} className={`relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-orange after:duration-300 hover:after:w-full ${pathname === "/contact" ? "text-orange after:w-full" : "text-gray-900"}`}>
                     Contact
                   </NavLink>
                 </li>

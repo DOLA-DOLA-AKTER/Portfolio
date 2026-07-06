@@ -16,7 +16,7 @@ export const MissionVision = () => {
                             Mission
                         </h3>
 
-                        <p className="text-gray-600 leading-7">
+                        <p className="text-gray-600 leading-7 text-sm md:text-base">
                             Become a professional full-stack developer and build useful
                             applications.
                         </p>
@@ -30,7 +30,7 @@ export const MissionVision = () => {
                             Vision
                         </h3>
 
-                        <p className="text-gray-600 leading-7">
+                        <p className="text-gray-600 leading-7 text-sm md:text-base">
                             Work with global tech companies and contribute to innovative
                             projects.
                         </p>

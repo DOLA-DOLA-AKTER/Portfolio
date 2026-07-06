@@ -55,12 +55,12 @@ export const Abouts = () => {
                                 Front-End Web Developer
                             </h3>
 
-                            <p className="text-gray-600 leading-8 mb-6">
+                            <p className="text-gray-600 leading-8 mb-6 text-sm md:text-base">
                                 I am a passionate Front-End Web Developer who enjoys building responsive, accessible, and user-friendly web applications using React.js, JavaScript, and Tailwind CSS.
 
                             </p>
 
-                            <p className="text-gray-600 leading-8">
+                            <p className="text-gray-600 leading-8 text-sm md:text-base">
                                 Currently, I am expanding my skills by learning modern web technologies and best practices. I enjoy solving problems, writing clean code, and creating interactive user experiences.
                             </p>
 

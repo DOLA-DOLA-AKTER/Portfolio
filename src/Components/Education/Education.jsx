@@ -34,6 +34,12 @@ export const Education = () => {
                     slidesToShow: 1,
                 }
             },
+            {
+                breakpoint: 570,
+                settings: {
+                    slidesToShow: 1,
+                }
+            },
 
         ]
 
