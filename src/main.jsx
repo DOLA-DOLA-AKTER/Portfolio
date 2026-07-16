@@ -9,6 +9,7 @@ import { Skills } from './Pages/Skills.jsx';
 import { Projects } from './Pages/Projects.jsx';
 import { Contact } from './Pages/Contact.jsx';
 import { RootLayOut } from './RootLayOut/RootLayOut.jsx';
+import { FloatingButton } from './Components/Button/FloatingButton.jsx';
 
 const router = createBrowserRouter([
   {
@@ -27,5 +28,6 @@ const router = createBrowserRouter([
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router={router} />
+    <FloatingButton/>
   </StrictMode>
 )

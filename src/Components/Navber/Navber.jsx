@@ -102,7 +102,7 @@ export const Navber = () => {
               </Modal>
             </div>
 
-            {/* Mobile Button */}
+            {/* Menu Button */}
             <button
               className="lg:hidden text-3xl cursor-pointer"
               onClick={() => setIsOpen(!isOpen)}

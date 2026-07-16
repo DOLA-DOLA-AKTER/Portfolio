@@ -64,7 +64,7 @@ export const Skill = () => {
                 <div>
 
                     {/* Section Heading */}
-                    <div className="text-center mb-14">
+                    <div className="text-center">
                         <SectionHeading
                             heading1='My'
                             heading2='Skills'

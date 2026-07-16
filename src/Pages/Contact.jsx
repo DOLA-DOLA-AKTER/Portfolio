@@ -4,7 +4,7 @@ import { Contacts } from '../Components/Contact/Contacts'
 export const Contact = () => {
   return (
     <div>
-        <Contacts/>
+      <Contacts/>
     </div>
   )
 }

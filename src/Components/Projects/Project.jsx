@@ -89,7 +89,7 @@ export const Project = () => {
           />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 pt-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
 
           {projectCard.map((project, index) => (
             <div key={index} className="bg-white rounded-2xl overflow-hidden shadow-md hover:-translate-y-3 hover:shadow-2xl transition-all duration-300">
